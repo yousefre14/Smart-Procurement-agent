@@ -8,6 +8,7 @@
 > **An autonomous multi-agent AI system that revolutionizes procurement processes by intelligently searching, analyzing, and recommending products across multiple e-commerce platforms.**
 
 ## 🎯 Executive Summary
+![AI-Generated Procurement Report](docs/images/procurement-report-demo.png)
 
 This project demonstrates advanced AI engineering capabilities through a sophisticated multi-agent system built with CrewAI. The system automates the entire procurement research process—from generating intelligent search queries to producing comprehensive HTML procurement reports—showcasing expertise in:
 
