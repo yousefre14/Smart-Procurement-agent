@@ -1,4 +1,4 @@
-# 🤖 AI-Powered Procurement Intelligence System
+# AI-Powered Procurement Intelligence System
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.12.1-green.svg)](https://www.crewai.com/)
@@ -135,23 +135,6 @@ SCRAPEGRAPH_API_KEY=your_scrapegraph_api_key_here
 AGENTOPS_API_KEY=your_agentops_api_key_here
 ```
 
-### Usage
-
-```python
-# Run the procurement agent
-from crew_config import Yousef_crew
-
-results = Yousef_crew.kickoff(
-    inputs={
-        "product_name": "coffee machine for the office",
-        "websites_list": ["www.amazon.eg", "www.noon.com"],
-        "no_keywords": 10,
-        "countrey_name": "Egypt",
-        "language": "english"
-    }
-)
-```
-
 ### Output Files
 
 The system generates structured outputs in `./ai-agent-output/`:
@@ -265,90 +248,6 @@ company_context = StringKnowledgeSource(
 
 ---
 
-## 🔮 Future Enhancements
-
-### Planned Features
-- [ ] **Multi-Currency Support**: Automatic currency conversion for global comparisons
-- [ ] **Price History Tracking**: MongoDB integration for historical price analysis
-- [ ] **Sentiment Analysis**: Customer review sentiment scoring
-- [ ] **Image Comparison**: Visual similarity analysis using CLIP
-- [ ] **Slack/Email Integration**: Automated report delivery
-- [ ] **A/B Testing Framework**: Compare different agent prompt strategies
-- [ ] **Caching Layer**: Redis integration to reduce redundant API calls
-- [ ] **Multi-Language Support**: Localization for global procurement teams
-
-### Research Directions
-- Reinforcement learning for query optimization
-- Graph neural networks for product relationship mapping
-- Fine-tuned embedding models for better product matching
-
----
-
-## 🧪 Testing & Quality Assurance
-
-### Running Tests
-```bash
-# Unit tests
-pytest tests/unit/
-
-# Integration tests
-pytest tests/integration/
-
-# Full pipeline test
-python tests/test_full_pipeline.py
-```
-
-### Code Quality
-```bash
-# Linting
-flake8 src/
-
-# Type checking
-mypy src/
-
-# Format code
-black src/
-```
-
----
-
-## 📚 Project Structure
-
-```
-ai-procurement-agent/
-│
-├── src/
-│   ├── agents/
-│   │   ├── query_agent.py
-│   │   ├── search_agent.py
-│   │   ├── scraping_agent.py
-│   │   └── report_agent.py
-│   │
-│   ├── models/
-│   │   ├── search_models.py
-│   │   ├── product_models.py
-│   │   └── report_models.py
-│   │
-│   ├── tools/
-│   │   ├── search_tool.py
-│   │   └── scraping_tool.py
-│   │
-│   └── crew_config.py
-│
-├── tests/
-│   ├── unit/
-│   └── integration/
-│
-├── ai-agent-output/         # Generated reports
-├── notebooks/               # Jupyter notebooks
-├── requirements.txt
-├── .env.example
-├── README.md
-└── LICENSE
-```
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! This project is actively maintained and open to:
@@ -367,77 +266,5 @@ Contributions are welcome! This project is actively maintained and open to:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🌟 Acknowledgments
-
-- **CrewAI Team** for the excellent multi-agent framework
-- **Groq** for providing fast LLM inference
-- **Tavily** for reliable web search API
-- **ScrapeGraph** for AI-powered web scraping
-- **AgentOps** for agent monitoring infrastructure
-
----
-
-## 💼 About the Developer
-
-### Yousef - AI Engineer
-
-I specialize in building production-ready AI systems with a focus on:
-- Multi-agent AI architectures
-- LLM application development
-- Web automation and data extraction
-- Enterprise AI solution design
-
-This project demonstrates my ability to:
-- Design and implement complex multi-agent systems
-- Integrate multiple AI services into cohesive workflows
-- Structure code for production deployment
-- Build practical solutions that deliver measurable business value
-
-### 📫 Connect With Me
-
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Email**: your.email@example.com
-- **Portfolio**: [yourportfolio.com](https://yourportfolio.com)
-
-### 🎯 Looking For Opportunities
-
-I'm actively seeking roles in:
-- AI/ML Engineering
-- LLM Application Development
-- Multi-Agent Systems Architecture
-- AI Product Development
-
-**What I Bring**:
-- Strong foundation in AI/ML and software engineering
-- Experience with modern AI frameworks (CrewAI, LangChain, LlamaIndex)
-- Production deployment experience
-- Problem-solving mindset with business impact focus
-
----
-
-## 📊 Project Stats
-
-![GitHub stars](https://img.shields.io/github/stars/yourusername/ai-procurement-agent?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/ai-procurement-agent?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/ai-procurement-agent?style=social)
-
----
-
-## 🔖 Tags
-
-`ai` `machine-learning` `crewai` `multi-agent-systems` `llm` `groq` `web-scraping` `procurement` `automation` `python` `agentops` `tavily` `scrapegraph` `pydantic` `enterprise-ai`
-
----
-
-</div>
