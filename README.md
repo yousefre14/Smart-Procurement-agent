@@ -251,24 +251,5 @@ company_context = StringKnowledgeSource(
 - **Cost per Run**: ~$0.05 (Groq inference + API calls)
 
 ---
-
-## 🤝 Contributing
-
-Contributions are welcome! This project is actively maintained and open to:
-
-- Bug reports and fixes
-- Feature requests and implementations
-- Documentation improvements
-- Performance optimizations
-- New agent types or tools
-
-### Contribution Workflow
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ---
 
