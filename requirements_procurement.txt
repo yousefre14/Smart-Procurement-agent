@@ -1,0 +1,27 @@
+# Core AI Framework
+crewai[tools,agentops]==1.12.1
+
+# LLM and API Integration
+groq>=0.4.0
+litellm>=1.0.0
+
+# Monitoring and Observability
+agentops>=0.3.0
+
+# Web Search and Scraping
+tavily-python>=0.3.0
+scrapegraph-py>=1.0.0
+
+# Data Validation and Models
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Development Dependencies (optional)
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
