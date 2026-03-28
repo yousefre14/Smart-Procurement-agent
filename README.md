@@ -33,43 +33,41 @@ This project demonstrates advanced AI engineering capabilities through a sophist
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    AI Procurement System                         │
+│                        User Interface Layer                      │
+│  (Notebook/CLI) → Input Parameters → Crew Orchestrator          │
 └─────────────────────────────────────────────────────────────────┘
-                               │
-                               ▼
-        ┌──────────────────────────────────────────┐
-        │  Agent 1: Search Query Strategist        │
-        │  • Generates optimized search keywords    │
-        │  • Considers brand variations            │
-        │  • Targets product pages, not blogs      │
-        └──────────────────────┬───────────────────┘
-                               │
-                               ▼
-        ┌──────────────────────────────────────────┐
-        │  Agent 2: Web Search Intelligence        │
-        │  • Executes searches via Tavily API      │
-        │  • Filters low-quality results (< 0.10)  │
-        │  • Aggregates multi-source data          │
-        └──────────────────────┬───────────────────┘
-                               │
-                               ▼
-        ┌──────────────────────────────────────────┐
-        │  Agent 3: Product Data Extraction        │
-        │  • Scrapes product pages (ScrapeGraph)   │
-        │  • Extracts: price, specs, images        │
-        │  • Structures data with Pydantic models  │
-        └──────────────────────┬───────────────────┘
-                               │
-                               ▼
-        ┌──────────────────────────────────────────┐
-        │  Agent 4: Procurement Report Author      │
-        │  • Analyzes price/value comparisons      │
-        │  • Ranks products (1-5 scale)            │
-        │  • Generates Bootstrap HTML report       │
-        └──────────────────────────────────────────┘
-                               │
-                               ▼
-                    📊 Professional HTML Report
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                    CrewAI Orchestration Layer                    │
+│  • Process: Sequential                                           │
+│  • Knowledge: Company Context (StringKnowledgeSource)            │
+│  • State Management: Inter-agent data passing via JSON          │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+        ┌─────────────────────┴─────────────────────┐
+        │                                             │
+┌───────▼────────┐  ┌──────────────┐  ┌─────────────▼──────┐
+│  Agent Layer   │  │  Tool Layer  │  │  Model Layer       │
+│                │  │              │  │                    │
+│ • Query Agent  │  │ • Search API │  │ • Pydantic Schemas │
+│ • Search Agent │  │ • Scrape API │  │ • Type Validation  │
+│ • Scrape Agent │  │              │  │ • JSON Outputs     │
+│ • Report Agent │  │              │  │                    │
+└────────┬───────┘  └──────┬───────┘  └────────┬───────────┘
+         │                 │                    │
+         └─────────────────┴────────────────────┘
+                           ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                    External Service Layer                        │
+│  • Groq LLM API    • Tavily Search    • ScrapeGraph              │
+│  • AgentOps Monitoring                                          │
+└─────────────────────────────────────────────────────────────────┘
+                           ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                        Output Layer                              │
+│  • Structured JSON (steps 1-3)                                  │
+│  • HTML Report (step 4)                                         │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
