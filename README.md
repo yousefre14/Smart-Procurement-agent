@@ -5,10 +5,10 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![AgentOps](https://img.shields.io/badge/Monitoring-AgentOps-purple.svg)](https://www.agentops.ai/)
 
-> **An autonomous multi-agent AI system that revolutionizes procurement processes by intelligently searching, analyzing, and recommending products across multiple e-commerce platforms.**
+
+![AI-Generated Procurement Report](docs/images/procurement-report-demo.png)
 
 ## 🎯 Executive Summary
-![AI-Generated Procurement Report](docs/images/procurement-report-demo.png)
 
 This project demonstrates advanced AI engineering capabilities through a sophisticated multi-agent system built with CrewAI. The system automates the entire procurement research process—from generating intelligent search queries to producing comprehensive HTML procurement reports—showcasing expertise in:
 
@@ -84,14 +84,6 @@ This project demonstrates advanced AI engineering capabilities through a sophist
 | **Data Extractor** | Web Scraping | Autonomously extracts product details (price, specs, images) from diverse e-commerce platforms |
 | **Report Author** | Analysis & Reporting | Produces professional procurement reports with Executive Summary, Analysis, and Recommendations |
 
-### 🔧 Technical Highlights
-
-- **Type-Safe Data Models**: Pydantic schemas ensure data integrity across the pipeline
-- **Fault Tolerance**: Score-based filtering (0.10 threshold) removes low-quality search results
-- **Flexible LLM Backend**: Easy provider switching (Groq, OpenAI, Anthropic)
-- **Monitoring & Observability**: AgentOps integration for real-time agent performance tracking
-- **Structured Output**: JSON outputs at each stage for debugging and pipeline integration
-- **Custom Tools**: Extensible tool framework for search and scraping operations
 
 ---
 
