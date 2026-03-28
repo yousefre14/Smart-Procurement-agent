@@ -71,6 +71,7 @@ This project demonstrates advanced AI engineering capabilities through a sophist
 └─────────────────────────────────────────────────────────────────┘
 ```
 
+
 ---
 
 ## ✨ Key Features
@@ -84,7 +85,19 @@ This project demonstrates advanced AI engineering capabilities through a sophist
 | **Data Extractor** | Web Scraping | Autonomously extracts product details (price, specs, images) from diverse e-commerce platforms |
 | **Report Author** | Analysis & Reporting | Produces professional procurement reports with Executive Summary, Analysis, and Recommendations |
 
+---
+### 5. Monitoring & Observability
 
+**AgentOps Integration**:
+![AgentOps Monitring](docs/gifs/AgentOps_Monitring.gif)
+```
+
+**Tracked Metrics**:
+- Agent execution time
+- LLM token usage
+- Tool call success/failure rates
+- Error traces
+- Cost per run
 ---
 
 ## 🚀 Quick Start
