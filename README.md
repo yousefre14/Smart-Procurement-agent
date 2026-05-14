@@ -249,7 +249,3 @@ company_context = StringKnowledgeSource(
 - **Search Accuracy**: 85%+ relevant product pages
 - **Data Extraction Success Rate**: 90%+ (varies by site structure)
 - **Cost per Run**: ~$0.05 (Groq inference + API calls)
-
----
----
-
